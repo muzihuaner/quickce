@@ -1,0 +1,11 @@
+services:
+  quickce:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - MAX_CONCURRENT=50
+      - DEFAULT_TIMEOUT=5
+      - GIN_MODE=release
+    restart: unless-stopped

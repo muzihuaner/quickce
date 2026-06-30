@@ -1,0 +1,7 @@
+# Binaries
+*.exe
+*.test
+
+# Frontend
+frontend/dist/
+frontend/node_modules/

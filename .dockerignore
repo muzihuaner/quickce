@@ -1,0 +1,7 @@
+.git
+.gitignore
+*.exe
+frontend/dist
+frontend/node_modules
+README.md
+TODO.md
