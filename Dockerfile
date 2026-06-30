@@ -9,6 +9,7 @@ RUN npm run build
 # ---- Stage 2: Build Go backend ----
 FROM golang:1.26-alpine AS backend
 WORKDIR /build
+ENV GOPROXY=https://goproxy.cn,direct
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
